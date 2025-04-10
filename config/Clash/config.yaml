@@ -2,7 +2,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "机场订阅"
+    url: "http://45.159.48.147:8000/c/?token=6512bd43d9caa6e02c990b0a82652dca&client=v2ray"
     type: http
     interval: 86400
     health-check:
