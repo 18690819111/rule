@@ -98,6 +98,7 @@ dns:
 pr: &pr {type: select, proxies: [🚀 默认代理,  🌐 全部节点, 直连]}
 proxy-groups:
   - {name: 🚀 默认代理, type: select, proxies: [🌐 全部节点, 直连]}
+  - {name: 📥 PT, type: select, proxies: [直连, 🚀 默认代理]}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🍀 Google, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
