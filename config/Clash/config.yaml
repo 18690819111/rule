@@ -97,8 +97,8 @@ dns:
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 pr: &pr {type: select, proxies: [🚀 默认代理,  🌐 全部节点, 直连]}
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [🌐 全部节点, 直连]}
   - {name: 📥 PT, type: select, proxies: [直连, 🚀 默认代理]}
+  - {name: 🚀 默认代理, type: select, proxies: [🌐 全部节点, 直连]}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🍀 Google, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
@@ -119,7 +119,7 @@ proxy-groups:
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
-  - RULE-SET,PrivateTracker,📥 PT
+  - RULE-SET,PrivateTracker,🎯 直连
   - RULE-SET,private_domain,直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 默认代理
