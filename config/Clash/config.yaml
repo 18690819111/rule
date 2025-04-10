@@ -2,7 +2,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://zheng21303875.netlify.app/"
+    url: "机场订阅地址/"
     type: http
     interval: 86400
     health-check:
